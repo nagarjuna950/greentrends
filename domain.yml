@@ -1,0 +1,89 @@
+--- 
+actions: 
+  - utter_greet
+  - utter_gender
+  - utter_male_services
+  - utter_female_services
+  - utter_male_services_price
+  - utter_female_services_price
+  - utter_ongoing
+  - utter_proceed
+  - utter_no
+  - utter_yes
+  - action_service
+  - action_service_price
+  - action_yesno
+intents: 
+  - greet
+  - mood_happy
+  - mood_unhappy
+  - Female_services_price
+  - Male_services_price
+  - Female_services
+  - Male_services
+  - Gender
+
+templates:
+
+
+  utter_female_services:
+  - text: "Is the service required for"
+    buttons:
+    - title: "Waxing"
+      payload: "Waxing"
+    - title: "Facial"
+      payload: "Facial"
+    - title: "Pedicure"
+      payload: "Pedicure"
+  utter_female_services_price:
+  - text: "Please Select"
+    buttons:
+    - title: "Waxing Rs200"
+      payload: "Waxing Rs200"
+    - title: "Waxing/Threading Rs350"
+      payload: "Waxing/Threading Rs350"
+  utter_gender:
+  - text: "In Order to Continue please select your gender."
+    buttons:
+    - title: "Male"
+      payload: "Male"
+    - title: "Female"
+      payload: "Female"
+    
+  utter_greet:
+  - text: "Welcome to Green Trends! Hair Care Partner."
+  utter_male_services:
+  - text: "Is the service required for"
+    buttons:
+    - title: "Haircut"
+      payload: "Haircut"
+    - title: "Hair Colour"
+      payload: "Hair Colour"
+  utter_male_services_price:
+  - text: "Please Select"
+    buttons:
+    - title: "Haircut Rs200"
+      payload: "Haircut Rs200"
+    - title: "Haircut/Hair massage Rs300"
+      payload: "Haircut/Hair massage Rs300"
+    - title: "Haircut/Hair massage/Beard Styling Rs450"
+      payload: "Haircut/Hair massage/Beard Styling Rs450"
+  
+  utter_no: 
+  - text: "Sorry to see you go. Have a Nice day!"
+  utter_ongoing:
+  - text: "We are still working through go back to haircut."
+    buttons:
+    - title: "Haircut"
+      payload: "Haircut"
+    
+  utter_proceed:
+  - text: "Please Select Yes to continue/No to cancel." 
+    buttons:
+    - title: "Yes"
+      payload: "Yes"
+    - title: "No"
+      payload: "No"
+      
+  utter_yes: 
+  - text: "Thank you for selecting the service.Please click the link www.payment.com for secure payment."
